@@ -1,5 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { ApolloProvider } from '@apollo/react-hooks';
+import { ApolloClient } from 'apollo-boost';
+
+
 import About from './components/About';
 function App() {
 
