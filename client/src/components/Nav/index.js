@@ -13,6 +13,17 @@ function Nav() {
                         </Link>
                     </li>
                     <li>
+                        <Link to="/gallery">
+                            Gallery
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/contact">
+                            Contact
+                        </Link>
+                    </li>
+
+                    <li>
                         <a href="/" onClick={() => Auth.logout()}>
                             Logout
                         </a>
