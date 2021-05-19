@@ -32,7 +32,7 @@ function App() {
         <Route exact path="/about" component={About} />
       </Switch>
         <Carousel></Carousel>
-        <About></About>
+        {/* <About></About> */}
     </div>
     </Router>
    </ApolloProvider>
