@@ -5,9 +5,7 @@ import { ApolloClient } from 'apollo-boost';
 
 
 import About from './components/About';
-import Nav from './components/Nav';
-
-
+import Carousel from './components/Carousel';
 function App() {
 
   return (
@@ -16,6 +14,7 @@ function App() {
     <div>
       <Nav />
       <main>
+        <Carousel></Carousel>
         <About></About>
       </main>
     </div>
