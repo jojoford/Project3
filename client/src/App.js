@@ -7,6 +7,7 @@ import  ApolloClient from 'apollo-boost';
 // add home page? This will have seeded data of their work?
 // about page would be about app itself
 import About from './components/About';
+import Carousel from './components/Carousel';
 import Nav from './components/Nav';
 
 const client = new ApolloClient({
@@ -21,7 +22,6 @@ const client = new ApolloClient({
   uri: '/graphql',
 })
 
-
 function App() {
     return (
     <ApolloProvider client={client}>
@@ -31,6 +31,8 @@ function App() {
       <Switch>
         <Route exact path="/about" component={About} />
       </Switch>
+      <main>
+        <Carousel></Carousel>
         <About></About>
     </div>
     </Router>
