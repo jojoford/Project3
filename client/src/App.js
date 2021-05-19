@@ -31,7 +31,6 @@ function App() {
       <Switch>
         <Route exact path="/about" component={About} />
       </Switch>
-      <main>
         <Carousel></Carousel>
         <About></About>
     </div>
