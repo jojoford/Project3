@@ -5,6 +5,7 @@ import  ApolloClient  from 'apollo-boost';
 
 import Nav from './components/Nav';
 import Login from './pages/Login';
+// import Signup from './pages/Signup';
 import About from './components/About';
 import Carousel from './components/Carousel';
 
@@ -28,6 +29,7 @@ function App() {
     <Nav />
     <Switch>
       <Route exact path="/login" component={Login} />
+      {/* <Route exact path="/signup" component={Signup} /> */}
       <Route exact path="/about" component={About} />
     </Switch>
       <Carousel></Carousel>

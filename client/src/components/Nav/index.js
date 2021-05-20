@@ -21,6 +21,12 @@ function Nav() {
           </li>
 
           <li>
+            <Link to="/blackandwhites">
+              Black and Whites
+            </Link>
+          </li>
+
+          <li>
             <Link to="/landscapes">
               Landscapes
             </Link>
