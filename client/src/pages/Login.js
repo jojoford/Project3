@@ -29,7 +29,7 @@ function Login(props) {
 
     return (
         // signup code here?
-        <div class="container">
+        <div className="container">
             <Link to="/signup">
             ← Go to Signup
             </Link>

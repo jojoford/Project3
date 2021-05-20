@@ -67,7 +67,7 @@ function Nav() {
     <header className="flex-row px-1">
       <h1>
         <Link to="/">
-          Photo-List
+          Photo-Album📸
         </Link>
       </h1>
 
