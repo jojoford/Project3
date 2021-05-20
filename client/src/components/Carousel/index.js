@@ -1,11 +1,11 @@
 import React from 'react';
-import photo from "../../assets/landscapes/coverImage.jpg" ;
+import photo from '../../assets/landscapes/coverImage.jpg';
 
 function Carousel(props) {
   const currentCategory = {
-    name: "landscapes",
+    name: "landscape",
     description:
-      "Photos of landscapes",
+      "Photos of landscape",
   };
   return (
     <section>
