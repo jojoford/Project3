@@ -31,4 +31,4 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
   );
 };
 
-export default Slide;*/
+export default Slide;

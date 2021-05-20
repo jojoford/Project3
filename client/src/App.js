@@ -4,6 +4,7 @@ import { ApolloProvider } from '@apollo/react-hooks';
 import  ApolloClient  from 'apollo-boost';
 
 import Nav from './components/Nav';
+import Login from './pages/Login';
 import About from './components/About';
 import Carousel from './components/Carousel';
 
@@ -26,6 +27,7 @@ function App() {
   <div>
     <Nav />
     <Switch>
+      <Route exact path="/login" component={Login} />
       <Route exact path="/about" component={About} />
     </Switch>
       <Carousel></Carousel>
