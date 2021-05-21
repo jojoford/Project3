@@ -40,7 +40,7 @@ function Nav(props) {
         ))}
 
         <li className="mx-1">
-            <a href="/contact" onClick={() => setContactSelected(true)}>
+            <a href="#contact" onClick={() => setContactSelected(true)}>
               Contact
             </a>
           </li>
