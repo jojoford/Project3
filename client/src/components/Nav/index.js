@@ -23,27 +23,28 @@ function Nav(props) {
     </h1>
     <nav>
       <ul className="flex-row">
-        <li>
-          <a href="#about" onClick={() => setContactSelected(false)}>
+        <button><li>
+          <span>
+            <a href="#about" onClick={() => setContactSelected(false)}>
             About
-          </a>
-        </li>
+          </a></span>
+        </li></button>
 
         {categories.map((category) => (
-          <li><span onClick={() => {
+         <button> <li><span onClick={() => {
             setCurrentCategory(category);
             setContactSelected(false);
           }}
           >{capitalizeFirstLetter(category.name)}
             </span>
-          </li>
+          </li></button>
         ))}
 
-        <li className="mx-1">
+        <button><li className="mx-1"><span>
             <a href="#contact" onClick={() => setContactSelected(true)}>
               Contact
             </a>
-          </li>
+          </span></li></button>
            </ul>
     </nav>
     </header>
