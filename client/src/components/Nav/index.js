@@ -1,84 +1,75 @@
 import React from "react";
-import Auth from "../../utils/auth";
-import { Link } from "react-router-dom";
+// import Auth from "../../utils/auth";
+// import { Link } from "react-router-dom";
+import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function Nav() {
+function Nav(props) {
 
-  function showNavigation() {
-    if (Auth.loggedIn()) {
-      return (
-        <ul className="flex-row">
-          <li>
-            <Link to="/about">
-              About
-            </Link>
+  const {
+    categories = [],
+    setCurrentCategory,
+    // currentCategory,
+    // contactSelected,
+    setContactSelected
+  } = props;
+
+ 
+    return (
+      <header>
+    <h1>
+      <a href="/">
+        Photo-Album📸
+      </a>
+    </h1>
+    <nav>
+      <ul className="flex-row">
+        <li>
+          <a href="#about" onClick={() => setContactSelected(false)}>
+            About
+          </a>
+        </li>
+
+        {categories.map((category) => (
+          <li><span onClick={() => {
+            setCurrentCategory(category);
+            setContactSelected(false);
+          }}
+          >{capitalizeFirstLetter(category.name)}
+            </span>
           </li>
+        ))}
 
-          <li>
-            <Link to="/portraits">
-            Portraits 
-            </Link>
-          </li>
-
-          <li>
-            <Link to="/blackandwhites">
-              Black and Whites
-            </Link>
-          </li>
-
-          <li>
-            <Link to="/landscapes">
-              Landscapes
-            </Link>
-          </li>
-
-          <li className="mx-1">
-            <Link to="/contact">
+        <li className="mx-1">
+            <a href="/contact" onClick={() => setContactSelected(true)}>
               Contact
-            </Link>
-          </li>
-          <li className="mx-1">
-            {/* this is not using the Link component to logout or user and then refresh the application to the start */}
-            <a href="/" onClick={() => Auth.logout()}>
-              Logout
             </a>
           </li>
-        </ul>
-      );
-    } else {
-      return (
-        <ul className="flex-row">
-          <li className="mx-1">
-            <Link to="/signup">
-              Signup
-            </Link>
-          </li>
-          <li className="mx-1">
-            <Link to="/login">
-              Login
-            </Link>
-          </li>
-        </ul>
-      );
-    }
-  }
-
-  return (
-    <header className="flex-row px-1">
-      <h1>
-        <Link to="/">
-          Photo-Album📸
-        </Link>
-      </h1>
-
-      <nav>
-        {showNavigation()}
-      </nav>
+           </ul>
+    </nav>
     </header>
-  );
+ );
 }
-
 export default Nav;
+
+        // { <li>
+        //   <Link to="/portraits">
+        //   Portraits 
+        //   </Link>
+        // </li>
+
+        // <li>
+        //   <Link to="/blackandwhites">
+        //     Black and Whites
+        //   </Link>
+        // </li>
+
+        // <li>
+        //   <Link to="/landscapes">
+        //     Landscapes
+        //   </Link>
+        // </li> }
+   
+
 
 /*import React from 'react';
 import { Link } from "react-router-dom";

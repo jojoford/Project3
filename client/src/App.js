@@ -1,13 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React, { useState } from 'react';
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ApolloProvider } from '@apollo/react-hooks';
 import  ApolloClient  from 'apollo-boost';
 
 import Nav from './components/Nav';
-import Login from './pages/Login';
+// import Login from './pages/Login';
 // import Signup from './pages/Signup';
 import About from './components/About';
 import Carousel from './components/Carousel';
+// import ContactForm from './components/Contact';
 
 const client = new ApolloClient({
   request: (operation) => {
@@ -22,20 +23,45 @@ const client = new ApolloClient({
 })
 
 function App() {
+  const [contactSelected, setContactSelected] = useState(false);
+
+  const [categories] = useState([
+    {
+      name: 'portraits'
+    },
+    {
+      name: 'landscape'
+    },
+    {
+      name: 'black and whites'
+    },
+  ])
+
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+
   return (
   <ApolloProvider client={client}>
-    <Router>
+
   <div>
-    <Nav />
-    <Switch>
-      <Route exact path="/login" component={Login} />
+    <Nav categories={categories}
+    setCurrentCategory={setCurrentCategory}
+    currentCategory={currentCategory}
+    contactSelected={contactSelected}
+    setContactSelected={setContactSelected}
+    />
+    <main>
+
+
+      {/* <Route exact path="/login" component={Login} /> */}
       {/* <Route exact path="/signup" component={Signup} /> */}
-      <Route exact path="/about" component={About} />
-    </Switch>
+  <About></About>
+      {/* <Route exact path="/contact" component={ContactForm} /> */}
+   
       <Carousel></Carousel>
       {/* <About></About> */}
+      </main>
   </div>
-  </Router>
+ 
  </ApolloProvider>
 );
 }
