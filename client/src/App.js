@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './index.css';
 // import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ApolloProvider } from '@apollo/react-hooks';
 import  ApolloClient  from 'apollo-boost';
@@ -51,15 +52,9 @@ function App() {
     />
     <main>
 
-
-      {/* <Route exact path="/login" component={Login} /> */}
-      {/* <Route exact path="/signup" component={Signup} /> */}
-  <About></About>
-      {/* <Route exact path="/contact" component={ContactForm} /> */}
-   
+      <About></About>
       <Carousel></Carousel>
-      {/* <About></About> */}
-      </main>
+    </main>
   </div>
  
  </ApolloProvider>
