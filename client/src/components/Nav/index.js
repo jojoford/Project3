@@ -8,46 +8,42 @@ function Nav(props) {
   const {
     categories = [],
     setCurrentCategory,
-    // currentCategory,
-    // contactSelected,
+    currentCategory,
+    contactSelected,
     setContactSelected
   } = props;
 
  
     return (
-      <header>
-    <h1>
-      <a href="/">
-        Photo-Album📸
-      </a>
-    </h1>
-    <nav>
-      <ul className="flex-row">
-        <button><li>
-          <span>
-            <a href="#about" onClick={() => setContactSelected(false)}>
-            About
-          </a></span>
-        </li></button>
-
+  <div className="topnav" id="Topnav">
+      <a href="/" class="active">Photo-Album📸</a>
+       <a href="#about" onClick={() => setContactSelected(false)}>About</a>
+       
+      
         {categories.map((category) => (
-         <button> <li><span onClick={() => {
+          <span
+              className={`mx-1 ${
+                currentCategory.name === category.name && !contactSelected && 'navActive'
+                }`}
+              key={category.name}
+            >
+             <a href="" onClick={() => {
             setCurrentCategory(category);
             setContactSelected(false);
           }}
           >{capitalizeFirstLetter(category.name)}
-            </span>
-          </li></button>
+            </a>
+          </span>
         ))}
 
-        <button><li className="mx-1"><span>
-            <a href="#contact" onClick={() => setContactSelected(true)}>
+
+       
+            <a href="" className={`mx-2 ${contactSelected && 'navActive'}`} onClick={() => setContactSelected(true)}>
               Contact
             </a>
-          </span></li></button>
-           </ul>
-    </nav>
-    </header>
+        
+</div>
+    
  );
 }
 export default Nav;

@@ -4,12 +4,13 @@ import './index.css';
 import { ApolloProvider } from '@apollo/react-hooks';
 import  ApolloClient  from 'apollo-boost';
 
+
 import Nav from './components/Nav';
 // import Login from './pages/Login';
 // import Signup from './pages/Signup';
 import About from './components/About';
-import Carousel from './components/Carousel';
-// import ContactForm from './components/Contact';
+// import Carousel from './components/Carousel';
+import ContactForm from './components/Contact';
 
 const client = new ApolloClient({
   request: (operation) => {
@@ -34,7 +35,7 @@ function App() {
       name: 'landscape'
     },
     {
-      name: 'black and whites'
+      name: 'black and Whites'
     },
   ])
 
@@ -49,11 +50,16 @@ function App() {
     currentCategory={currentCategory}
     contactSelected={contactSelected}
     setContactSelected={setContactSelected}
-    />
+    ></Nav>
     <main>
-
+      {!contactSelected ? (
+        <>
+      {/* <Carousel></Carousel> */}
       <About></About>
-      <Carousel></Carousel>
+      </>
+      ) : (
+        <ContactForm></ContactForm>
+      )}
     </main>
   </div>
  
