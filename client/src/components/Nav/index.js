@@ -20,7 +20,7 @@ function Nav() {
   return (
     <div className="topnav" id="Topnav">
       <h1>
-        <Link to="/" class="active">Photo-Album📸</Link>
+        <Link to="/" className="active">Photo-Album📸</Link>
         </h1>
     
   <nav>
@@ -46,11 +46,6 @@ function Nav() {
         <div className="router-link">
         <Link to="/landscapes">Landscapes</Link>
                   </div>   
-
-                   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>    
-            
             </nav>
 </div>
               )
