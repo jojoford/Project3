@@ -6,6 +6,8 @@ import  ApolloClient  from 'apollo-boost';
 import Nav from './components/Nav';
 import About from './components/About';
 import Carousel from './components/Carousel';
+import Contact from './pages/contact';
+import Artists from './pages/artists'
 
 const client = new ApolloClient({
   request: (operation) => {
@@ -18,17 +20,22 @@ const client = new ApolloClient({
   },
   uri: '/graphql',
 })
+//alyse added artists and contact
+
 
 function App() {
   return (
   <ApolloProvider client={client}>
     <Router>
   <div>
-    <Nav />
+   <Nav />
     <Switch>
       <Route exact path="/about" component={About} />
+      <Route path="/artists" component={Artists} />
+      <Route path="/contact" component={Contact} />
     </Switch>
-      <Carousel></Carousel>
+    
+      <Carousel> </Carousel>
       {/* <About></About> */}
   </div>
   </Router>
