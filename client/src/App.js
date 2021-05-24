@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './index.css';
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ApolloProvider } from '@apollo/react-hooks';
 import  ApolloClient  from 'apollo-boost';
 
@@ -10,7 +10,8 @@ import Nav from './components/Nav';
 // import Signup from './pages/Signup';
 import About from './components/About';
 import Carousel from './components/Carousel';
-import ContactForm from './components/Contact';
+import Contact from './pages/contact';
+import Artists from './pages/artists'
 
 const client = new ApolloClient({
   request: (operation) => {
@@ -23,46 +24,41 @@ const client = new ApolloClient({
   },
   uri: '/graphql',
 })
+//alyse added artists and contact
+
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
+  // const [contactSelected, setContactSelected] = useState(false);
 
-  const [categories] = useState([
-    {
-      name: 'portraits'
-    },
-    {
-      name: 'landscape'
-    },
-    {
-      name: 'black and Whites'
-    },
-  ])
+  // const [categories] = useState([
+  //   {
+  //     name: 'portraits'
+  //   },
+  //   {
+  //     name: 'landscape'
+  //   },
+  //   {
+  //     name: 'black and Whites'
+  //   },
+  // ])
 
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  // const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   return (
   <ApolloProvider client={client}>
-
+<Router>
   <div>
-    <Nav categories={categories}
-    setCurrentCategory={setCurrentCategory}
-    currentCategory={currentCategory}
-    contactSelected={contactSelected}
-    setContactSelected={setContactSelected}
-    ></Nav>
-    <main>
-      {!contactSelected ? (
-        <>
-      <Carousel></Carousel> 
-      <About></About>
-      </>
-      ) : (
-        <ContactForm></ContactForm>
-      )}
-    </main>
+   <Nav />
+    <Switch>
+      <Route exact path="/about" component={About} />
+      <Route path="/artists" component={Artists} />
+      <Route path="/contact" component={Contact} />
+    </Switch>
+    
+      <Carousel> </Carousel>
+      {/* <About></About> */}
   </div>
- 
+ </Router>
  </ApolloProvider>
 );
 }

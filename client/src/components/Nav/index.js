@@ -1,50 +1,54 @@
-import React from "react";
-// import Auth from "../../utils/auth";
-// import { Link } from "react-router-dom";
-import { capitalizeFirstLetter } from '../../utils/helpers';
 
+import React from 'react';
+import { Link } from "react-router-dom";
+
+//alyse added link 
 function Nav(props) {
+  const  categories = [
+    { name: 'blackAndWhite', description: 'Photos in black and white' },
+    { name: 'portraits', description: 'Portraits of people in my life' },
+    { name: 'landscape', description: 'The beauty of nature' }
+  ];
 
   const {
-    categories = [],
-    setCurrentCategory,
-    currentCategory,
-    contactSelected,
-    setContactSelected
+    // setCurrentCategory,
+    // currentCategory,
+    // contactSelected,
+    // setContactSelected
   } = props;
 
- 
-    return (
-  <div className="topnav" id="Topnav">
-      <a href="/" class="active">Photo-Album📸</a>
-       <a href="#about" onClick={() => setContactSelected(false)}>About</a>
-       
-      
-        {categories.map((category) => (
-          <span
-              className={`mx-1 ${
-                currentCategory.name === category.name && !contactSelected && 'navActive'
-                }`}
-              key={category.name}
-            >
-             <a href="" onClick={() => {
-            setCurrentCategory(category);
-            setContactSelected(false);
-          }}
-          >{capitalizeFirstLetter(category.name)}
-            </a>
+  return (
+
+
+  <nav>
+    <ul className="flex-row">
+      <div className="router-link">
+      <Link className="text-decor" to="/about">About</Link>
+      </div>
+      <div className="router-link">
+                            <Link className="text-decor" to="/artists">artists</Link>
+                        </div>
+      <div className="router-link">
+                            <Link className="text-decor" to="/contact">contact</Link>
+                        </div>
+
+       {/* {categories.map((category) => (
+        <li
+          className="mx-1"
+          key={category.name}
+        >
+          <span onClick={() => { handleClick(); }}>
+            {category.name}
           </span>
-        ))}
+          </li>
+        ))} */}
 
 
-       
-            <a href="" className={`mx-2 ${contactSelected && 'navActive'}`} onClick={() => setContactSelected(true)}>
-              Contact
-            </a>
-        
-</div>
-    
- );
+        </ul>
+        </nav>
+
+  )
+ 
 }
 export default Nav;
 
