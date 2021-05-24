@@ -20,10 +20,14 @@ function Nav() {
   // } = props;
 
 
-  function showNavigation() {
-    if (Auth.loggedIn()) {
       return (
         <nav className="topnav" id="Topnav">
+        <header className="topnav" id="Topnav">
+        <h1>
+                  <Link to="/" className="active">Photo-Album📸</Link>
+                  </h1>
+                  </header>
+        
         <div className="router-link">
         <Link className="text-decor" to="/about">About</Link>
                   </div>
@@ -45,71 +49,15 @@ function Nav() {
   
           <div className="router-link">
           <Link to="/landscapes">Landscapes</Link>
-                    </div>    
-    <div className="router-link">
-            {/* this is not using the Link component to logout or user and then refresh the application to the start */}
-            <a href="/" onClick={() => Auth.logout()}>
-              Logout
-            </a>
-          </div>
-    
+                    </div> 
    </nav>
       );
-
-      }else {
-          return (
-            <nav className="topnav" id="Topnav">
-              <div className="router-link">
-              <Link className="text-decor" to="/login">Login</Link>
-            </div>
-
-            <div className="router-link">
-              <Link className="text-decor" to="/signup">Signup</Link>
-            </div>
-            </nav>
-                )
-              }
-
-            }
-
-            return (
-          <div>
-            <header className="topnav" id="Topnav">
-            <h1>
-                      <Link to="/" className="active">Photo-Album📸</Link>
-                      </h1>
-                      <nav>
-                        {showNavigation()}
-                      </nav>
-            </header>
-          </div>
-            );
-                      };
+    };
 
                       
-/* 
-            <div className="router-link">
-            <Link className="text-decor" to="/about">About</Link>
-                      </div>
-            <div className="router-link">
-              <Link className="text-decor" to="/artists">Artists</Link>
-                      </div>
-            <div className="router-link">
-              <Link className="text-decor" to="/contact">Contact</Link>
-                      </div>
-      
-              <div className="router-link">
-              
-            <Link to="/portraits">Portraits</Link>
-                        </div>
-      
-              <div className="router-link">
-           <Link to="/blackandwhites">Black and Whites</Link>
-                        </div>
-      
-              <div className="router-link">
-              <Link to="/landscapes">Landscapes</Link>
-                        </div>    */
+
+    export default Nav;
+
                 
             
       
@@ -153,7 +101,6 @@ function Nav() {
 
         
 
-export default Nav;
 
       
         
