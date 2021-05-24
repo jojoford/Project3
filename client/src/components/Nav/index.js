@@ -66,7 +66,28 @@ function Nav() {
             <div className="router-link">
               <Link className="text-decor" to="/signup">Signup</Link>
             </div>
-{/* 
+            </nav>
+                )
+              }
+
+            }
+
+            return (
+          <div>
+            <header className="topnav" id="Topnav">
+            <h1>
+                      <Link to="/" className="active">Photo-Album📸</Link>
+                      </h1>
+                      <nav>
+                        {showNavigation()}
+                      </nav>
+            </header>
+          </div>
+            );
+                      };
+
+                      
+/* 
             <div className="router-link">
             <Link className="text-decor" to="/about">About</Link>
                       </div>
@@ -88,62 +109,47 @@ function Nav() {
       
               <div className="router-link">
               <Link to="/landscapes">Landscapes</Link>
-                        </div>    */}
-                  </nav>
-            
-          )
-      }
-        <div className="topnav" id="Topnav">
-          {/* <h1>
-            <Link to="/" className="active">Photo-Album📸</Link>
-            </h1> */}
-        
-      <nav>
-          <div className="router-link">
-          <Link className="text-decor" to="/about">About</Link>
-                    </div>
-          <div className="router-link">
-            <Link className="text-decor" to="/artists">Artists</Link>
-                    </div>
-          <div className="router-link">
-            <Link className="text-decor" to="/contact">Contact</Link>
-                    </div>
-    
-            <div className="router-link">
-            
-          <Link to="/portraits">Portraits</Link>
-                      </div>
-    
-            <div className="router-link">
-         <Link to="/blackandwhites">Black and Whites</Link>
-                      </div>
-    
-            <div className="router-link">
-            <Link to="/landscapes">Landscapes</Link>
-                      </div>   
-                </nav>
+                        </div>    */
                 
-    </div>
+            
+      
+    //     <div className="topnav" id="Topnav">
+    //       {/* <h1>
+    //         <Link to="/" className="active">Photo-Album📸</Link>
+    //         </h1> */}
+        
+    //   <nav>
+    //       <div className="router-link">
+    //       <Link className="text-decor" to="/about">About</Link>
+    //                 </div>
+    //       <div className="router-link">
+    //         <Link className="text-decor" to="/artists">Artists</Link>
+    //                 </div>
+    //       <div className="router-link">
+    //         <Link className="text-decor" to="/contact">Contact</Link>
+    //                 </div>
+    
+    //         <div className="router-link">
+            
+    //       <Link to="/portraits">Portraits</Link>
+    //                   </div>
+    
+    //         <div className="router-link">
+    //      <Link to="/blackandwhites">Black and Whites</Link>
+    //                   </div>
+    
+    //         <div className="router-link">
+    //         <Link to="/landscapes">Landscapes</Link>
+    //                   </div>   
+    //             </nav>
+                
+    // </div>
     
       
                  
   
   
-  }
-
-  return (
-<div>
-  <header className="topnav" id="Topnav">
-  <h1>
-            <Link to="/" className="active">Photo-Album📸</Link>
-            </h1>
-            <nav>
-              {showNavigation()}
-            </nav>
-  </header>
-</div>
-  );
-            };
+ 
 
         
 
