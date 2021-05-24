@@ -19,16 +19,19 @@ const client = new ApolloClient({
   uri: '/graphql',
 })
 
+
+
 function App() {
   return (
   <ApolloProvider client={client}>
     <Router>
   <div>
-    <Nav />
+   <Nav />
     <Switch>
       <Route exact path="/about" component={About} />
     </Switch>
-      <Carousel></Carousel>
+    
+      <Carousel> </Carousel>
       {/* <About></About> */}
   </div>
   </Router>

@@ -3,7 +3,7 @@ import React from 'react';
 
 function Nav(props) {
   const  categories = [
-    { name: 'blackandwhite', description: 'Photos in black and white' },
+    { name: 'blackAndWhite', description: 'Photos in black and white' },
     { name: 'portraits', description: 'Portraits of people in my life' },
     { name: 'landscape', description: 'The beauty of nature' }
   ];
