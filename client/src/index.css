@@ -23,7 +23,7 @@ code {
 
 /* nav styles */
 .topnav {
-  background-color: #333;
+  background-color: #000000;
   overflow: hidden;
 }
 
@@ -31,12 +31,40 @@ code {
   float: left;
   display: block;
   color: #ffffff;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+.header {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+.router-link {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 17px;
+  padding-left: 8px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
 /* nav styles end */

@@ -1,74 +1,69 @@
-
 import React from 'react';
 import { Link } from "react-router-dom";
 
+
 //alyse added link 
-function Nav(props) {
+function Nav() {
   const  categories = [
     { name: 'blackAndWhite', description: 'Photos in black and white' },
     { name: 'portraits', description: 'Portraits of people in my life' },
     { name: 'landscape', description: 'The beauty of nature' }
   ];
 
-  const {
-    // setCurrentCategory,
-    // currentCategory,
-    // contactSelected,
-    // setContactSelected
-  } = props;
+  // const {
+  //   // setCurrentCategory,
+  //   // currentCategory,
+  //   // contactSelected,
+  //   // setContactSelected
+  // } = props;
 
   return (
-
-
+    <div className="topnav" id="Topnav">
+      <h1>
+        <Link to="/" class="active">Photo-Album📸</Link>
+        </h1>
+    
   <nav>
-    <ul className="flex-row">
       <div className="router-link">
       <Link className="text-decor" to="/about">About</Link>
-      </div>
+                </div>
       <div className="router-link">
-                            <Link className="text-decor" to="/artists">artists</Link>
-                        </div>
+        <Link className="text-decor" to="/artists">Artists</Link>
+                </div>
       <div className="router-link">
-                            <Link className="text-decor" to="/contact">contact</Link>
-                        </div>
+        <Link className="text-decor" to="/contact">Contact</Link>
+                </div>
 
-       {/* {categories.map((category) => (
-        <li
-          className="mx-1"
-          key={category.name}
-        >
-          <span onClick={() => { handleClick(); }}>
-            {category.name}
-          </span>
-          </li>
-        ))} */}
+        <div className="router-link">
+        
+      <Link to="/portraits">Portraits</Link>
+                  </div>
 
+        <div className="router-link">
+     <Link to="/blackandwhites">Black and Whites</Link>
+                  </div>
 
-        </ul>
-        </nav>
+        <div className="router-link">
+        <Link to="/landscapes">Landscapes</Link>
+                  </div>   
 
-  )
+                   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>    
+            
+            </nav>
+</div>
+              )
  
-}
+            }
+
+        
+
 export default Nav;
 
-        // { <li>
-        //   <Link to="/portraits">
-        //   Portraits 
-        //   </Link>
-        // </li>
+      
+        
 
-        // <li>
-        //   <Link to="/blackandwhites">
-        //     Black and Whites
-        //   </Link>
-        // </li>
-
-        // <li>
-        //   <Link to="/landscapes">
-        //     Landscapes
-        //   </Link>
-        // </li> }
    
 
 
