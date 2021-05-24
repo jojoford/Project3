@@ -1,6 +1,7 @@
 
 import React from 'react';
-
+import { Link } from "react-router-dom";
+//alyse added link 
 function Nav(props) {
   const  categories = [
     { name: 'blackAndWhite', description: 'Photos in black and white' },
@@ -23,9 +24,15 @@ function Nav(props) {
           About 
         </a>
       </li>
+      <div className="router-link">
+                            <Link className="text-decor" to="/artists">artists</Link>
+                        </div>
+      <div className="router-link">
+                            <Link className="text-decor" to="/contact">contact</Link>
+                        </div>
       <li>
-      <span onClick={() => handleClick()}>
-        Contact</span>
+        <a href="#Contact" onClick={() => handleClick()}>
+        Contact</a>
       </li>
        {categories.map((category) => (
         <li
