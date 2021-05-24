@@ -9,7 +9,7 @@ import Nav from './components/Nav';
 // import Login from './pages/Login';
 // import Signup from './pages/Signup';
 import About from './components/About';
-// import Carousel from './components/Carousel';
+import Carousel from './components/Carousel';
 import ContactForm from './components/Contact';
 
 const client = new ApolloClient({
@@ -54,7 +54,7 @@ function App() {
     <main>
       {!contactSelected ? (
         <>
-      {/* <Carousel></Carousel> */}
+      <Carousel></Carousel> 
       <About></About>
       </>
       ) : (
