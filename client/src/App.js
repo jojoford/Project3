@@ -45,6 +45,8 @@ function App() {
 
   // const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
+
+
   return (
   <ApolloProvider client={client}>
 <Router>

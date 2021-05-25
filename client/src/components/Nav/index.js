@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 // import SignupForm from './SignupForm';
 // import LoginForm from './LoginForm';
@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 
 //alyse added link 
 function Nav() {
+    const [click, setClick] = useState(false);
+    // const handleClick = () => setClick(!click);
+    const closeMobileMenu = () => setClick(false);
+
 //   const  categories = [
 //     { name: 'blackAndWhite', description: 'Photos in black and white' },
 //     { name: 'portraits', description: 'Portraits of people in my life' },
@@ -19,38 +23,35 @@ function Nav() {
   //   // setContactSelected
   // } = props;
 
-
       return (
-        <nav className="topnav" id="Topnav">
-        <header className="topnav" id="Topnav">
-        <h1>
-          <Link to="/" className="active">Photo-Album📸</Link>
+          <div className={click ? "nav-options active" : "items"}>
+        <nav className="nav">
+        <h1 className="header" onClick={closeMobileMenu}>
+          <Link to="/">Photo-Album📸</Link>
          </h1>
-          </header>
         
-        <div className="router-link">
-        <Link className="text-decor" to="/about">About</Link>
-                  </div>
-        <div className="router-link">
-          <Link className="text-decor" to="/artists">Artists</Link>
-                  </div>
-        <div className="router-link">
-          <Link className="text-decor" to="/contact">Contact</Link>
-                  </div>
-  
-          <div className="router-link">
+        <div className="nav-items">
+        <Link className="nav-item" onClick={closeMobileMenu} to="/about">About</Link>
+                 
+        
+        <Link className="nav-item" onClick={closeMobileMenu} to="/artists">Artists</Link>
+                 
+        
+        <Link className="nav-item" onClick={closeMobileMenu} to="/contact">Contact</Link>
+                
           
-        <Link to="/portraits">Portraits</Link>
-                    </div>
+        <Link className="nav-item" onClick={closeMobileMenu} to="/portraits">Portraits</Link>
+                   
   
-          <div className="router-link">
-       <Link to="/blackandwhites">Black and Whites</Link>
-                    </div>
-  
-          <div className="router-link">
-          <Link to="/landscapes">Landscapes</Link>
-                    </div> 
+       <Link className="nav-item" onClick={closeMobileMenu} to="/blackandwhites">Black and Whites</Link>
+                 
+        
+        <Link className="nav-item" onClick={closeMobileMenu} to="/landscapes">Landscapes</Link>  
+
+          </div>  
    </nav>
+   </div>
+
       );
     };
 

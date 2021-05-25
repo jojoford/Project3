@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
 
-// the order is for any purchases made of the photographers prints
+// the order is for any purchases made of the photographers photos
 
 const orderSchema = new Schema({
     purchaseDate: {
