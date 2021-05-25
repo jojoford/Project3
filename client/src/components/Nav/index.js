@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 
 //alyse added link 
 function Nav() {
-  const  categories = [
-    { name: 'blackAndWhite', description: 'Photos in black and white' },
-    { name: 'portraits', description: 'Portraits of people in my life' },
-    { name: 'landscape', description: 'The beauty of nature' }
-  ];
+//   const  categories = [
+//     { name: 'blackAndWhite', description: 'Photos in black and white' },
+//     { name: 'portraits', description: 'Portraits of people in my life' },
+//     { name: 'landscape', description: 'The beauty of nature' }
+//   ];
 
   // const {
   //   // setCurrentCategory,

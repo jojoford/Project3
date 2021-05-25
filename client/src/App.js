@@ -9,7 +9,6 @@ import Nav from './components/Nav';
 import Login from './pages/Login';
 // import Signup from './pages/Signup';
 import About from './components/About';
-import Carousel from './components/Carousel';
 import Contact from './pages/contact';
 import Artists from './pages/artists';
 
