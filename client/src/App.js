@@ -4,14 +4,16 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ApolloProvider } from '@apollo/react-hooks';
 import  ApolloClient  from 'apollo-boost';
 
-
+import Home from "./pages/Home";
 import Nav from './components/Nav';
 import Login from './pages/Login';
 // import Signup from './pages/Signup';
 import About from './components/About';
 import Carousel from './components/Carousel';
 import Contact from './pages/contact';
-import Artists from './pages/artists'
+import Artists from './pages/artists';
+
+
 
 const client = new ApolloClient({
   request: (operation) => {
@@ -50,6 +52,7 @@ function App() {
   <div>
    <Nav />
     <Switch>
+      <Route exact path="/" component={Home} />
       <Route exact path="/login" component={Login} />
       {/* <Route exact path="/signup" component={Signup} /> */}
       <Route exact path="/about" component={About} />
@@ -57,7 +60,7 @@ function App() {
       <Route path="/contact" component={Contact} />
     </Switch>
     
-      <Carousel> </Carousel>
+      {/* <Carousel> </Carousel> */}
       {/* <About></About> */}
   </div>
  </Router>
