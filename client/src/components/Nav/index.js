@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 // import SignupForm from './SignupForm';
 // import LoginForm from './LoginForm';
-import Auth from '../../utils/auth';
+// import Auth from '../../utils/auth';
 
 //alyse added link 
 function Nav() {
@@ -24,9 +24,9 @@ function Nav() {
         <nav className="topnav" id="Topnav">
         <header className="topnav" id="Topnav">
         <h1>
-                  <Link to="/" className="active">Photo-Album📸</Link>
-                  </h1>
-                  </header>
+          <Link to="/" className="active">Photo-Album📸</Link>
+         </h1>
+          </header>
         
         <div className="router-link">
         <Link className="text-decor" to="/about">About</Link>
