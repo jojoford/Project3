@@ -23,6 +23,11 @@ const photoSchema = new Schema({
         type: Number,
         min: 0,
         default: 0
+    },
+    order: {
+        type: Schema.Types.ObjectId,
+        ref: 'Order',
+        required: true
     }
 });
 
