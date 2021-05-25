@@ -1,7 +1,10 @@
-const Photographer = require('./photographer');
 const User = require('./User');
-// const Order = require('./Order');
+// for the cart?
+ const Photo = require('./Photo');
+const Photographer = require('./Photographer');
+const Order = require('./Order');
 
 
 
-module.exports = { Photographer, User}; 
+
+module.exports = { Photographer, User, Order, Photo}; 

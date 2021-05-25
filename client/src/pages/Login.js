@@ -60,9 +60,13 @@ function Login(props) {
                 <p>The provided credentials are incorrect</p>
             </div> : null
         }
+        <div>
+            <button type="submit">
+                Submit
+            </button>
+             </div>
         </form>
-
-        </div>
+    </div>
     )
 }
 
