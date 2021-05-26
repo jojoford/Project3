@@ -13,7 +13,7 @@ class carousel extends Component {
     };
     
     return (
-      <div className="has-margins margin-top">
+      <div className="has-margins margin-top carousel">
       <Carousel
         autoPlay={true}
         showThumbs={false}
@@ -35,7 +35,7 @@ class carousel extends Component {
                    <p className="legend">Image 3 </p>
                 </div>
                 <div>
-                    <img src="https://www.chesleysummarphotography.com/wp-content/uploads/2013/06/web086.jpg" />
+                   <img src="https://www.chesleysummarphotography.com/wp-content/uploads/2013/06/web086.jpg" /> 
                     <p className="legend">Image 4 by Chelsea</p>
                 </div>
                 <div>
