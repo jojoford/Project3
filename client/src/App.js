@@ -9,7 +9,8 @@ import Nav from './components/Nav';
 import Login from './pages/Login';
 // import Signup from './pages/Signup';
 import About from './components/About';
-import Contact from './pages/contact';
+import Carousel from './components/Carousel';
+import Contact from './pages/Contact';
 import Artists from './pages/artists';
 
 
@@ -44,6 +45,7 @@ function App() {
   // ])
 
   // const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  //path for pages, exact path for component
 
 
 
