@@ -1,4 +1,11 @@
 {
+  "name": "Photo Album",
+  "short_name": "Album",  
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  
   "icons": [
     {
       "src": "./icon-72x72.png",
@@ -26,11 +33,6 @@
       "type": "image/png"
     }
    
-  ],
-  "name": "Photo Album",
-  "short_name": "Album",  
-  "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
+
 }
