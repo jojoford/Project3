@@ -9,6 +9,8 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
     <link rel="shortcut icon" href="icon-128x128.png" type="image/x-icon">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!--
@@ -41,16 +43,21 @@
 
 </script>
 
-<script>
-  if('serviceworker' in navigator) {
-      window.addEventListener('load', () => {
-          navigator.serviceWorker.register('./serviceworker.js')
-              .then((reg) => console.log('Success: ', reg.scope))
-              .catch((err) => console.log('Failure: ', err));
-      })
+<!-- <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('serviceWorker.js').then(function(registration) {
+        console.log('Worker registration successful', registration.scope);
+      }, function(err) {
+        console.log('Worker registration failed', err);
+      }).catch(function(err) {
+        console.log(err);
+      });
+    });
+  } else {
+    console.log('Service Worker is not supported by browser.');
   }
-</script>
-
+</script> -->
       
   </body>
 </html>

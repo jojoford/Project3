@@ -12,4 +12,4 @@
 
 ## Contributors ✏️
 
-Alyse Alford<br>Aaliyah Symlar
+Alyse Alford<br>Aaliyah Symlar<br>Ivy Stephenson
