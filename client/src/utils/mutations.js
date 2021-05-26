@@ -11,4 +11,29 @@ mutation login($email: String!, $password: String!) {
   }
 `;
 
-// need ADD_USER created
+export const ADD_ORDER = gql`
+  mutation addOrder($photos: [ID]!) {
+    addOrder(photos: $photos) {
+      purchaseDate
+      photos {
+        _id
+      name
+      description
+      price
+      quantity
+      }
+    }
+  }
+`;
+
+
+export const ADD_USER = gql`
+  mutation addUser($firstName: String!, $lastName: String!, $email: String!, $password: String!) {
+    addUser(firstName: $firstName, lastName: $lastName, email: $email, password: $password) {
+      token
+      user {
+        _id
+      }
+    }
+  }
+`;
