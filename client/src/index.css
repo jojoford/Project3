@@ -33,7 +33,7 @@ code {
 
 .nav a {
   float: left;
-  color: #928f92;
+  color: #ffffff;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 18px;
@@ -45,7 +45,7 @@ code {
 }
 
 .nav a:hover {
-  background-color: #ddd;
+  background-color: rgb(64, 173, 156);
   color: black;
   border-radius: 8px 0 0 8px;
 }
