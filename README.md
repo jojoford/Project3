@@ -5,7 +5,7 @@
 
 
 ## Description
-
+<p>An app easily accessible to purchase photographs and hire local photographers</p>
 
 ## Usage💻
 
