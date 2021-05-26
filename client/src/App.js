@@ -9,8 +9,8 @@ import Nav from './components/Nav';
 import Login from './pages/Login';
 // import Signup from './pages/Signup';
 import About from './components/About';
-import Carousel from './components/Carousel';
-import Contact from './pages/Contact';
+// import Carousel from './components/Carousel';
+import Contact from './pages/contact';
 import Artists from './pages/artists';
 
 
@@ -53,7 +53,7 @@ function App() {
   <ApolloProvider client={client}>
 <Router>
   <div>
-   <Nav />
+    <Nav /> 
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/login" component={Login} />

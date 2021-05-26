@@ -24,7 +24,7 @@ class carousel extends Component {
       >
        <div>
          <img src="https://images.squarespace-cdn.com/content/v1/52561b19e4b087f3368839ba/1401891725887-QLUF9C1DXI6UZUF68FI3/ke17ZwdGBToddI8pDm48kGXoD000J7kx3NE7W-LXpdwUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcSHIBb6yNmvYkAyvF3loIw6LWPhmq3jJqr-f9nvyP7bW--NA7--1aw0mnW_uWXk87/Honeymoon_10.jpg?format=1000w"
-                   alt= "photo of a rose"></img> 
+                   alt= "a rose"></img> 
                    <p className="legend">Image 2 by KatieJane</p>
                 </div>
                 <div>
@@ -36,11 +36,11 @@ class carousel extends Component {
                    <p className="legend">Image 3 </p>
                 </div>
                 <div>
-                    <img src={KimsBlackandWhite} />
+                    <img src={KimsBlackandWhite} alt="a couple" />
                     <p className="legend">Image 4 by Kim</p>
                 </div>
                 <div>
-                    <img src="https://images.squarespace-cdn.com/content/v1/52561b19e4b087f3368839ba/1486522670940-D5EL7JR8BM4XQNX7DYON/ke17ZwdGBToddI8pDm48kKAwwdAfKsTlKsCcElEApLR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UegTYNQkRo-Jk4EWsyBNhwKrKLo5CceA1-Tdpfgyxoog5ck0MD3_q0rY3jFJjjoLbQ/LonguskiFamily_14.jpg?format=2500w" />
+                    <img src="https://images.squarespace-cdn.com/content/v1/52561b19e4b087f3368839ba/1486522670940-D5EL7JR8BM4XQNX7DYON/ke17ZwdGBToddI8pDm48kKAwwdAfKsTlKsCcElEApLR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UegTYNQkRo-Jk4EWsyBNhwKrKLo5CceA1-Tdpfgyxoog5ck0MD3_q0rY3jFJjjoLbQ/LonguskiFamily_14.jpg?format=2500w" alt="a couple holding their baby"/>
                     <p className="legend">Image 5</p>
                 </div>
       </Carousel>
