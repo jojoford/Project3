@@ -2,7 +2,9 @@
 import React from "react";
 import Row from "../../components/Row";
 import Col from "../../components/Col";
-// import images from "../../assets/jo2.jpg";
+import katieprofile from "../../assets/katieprofile.jpg";
+import JamesProfile from "../../assets/JamesProfile.jpg";
+import kimArtist2 from "../../assets/kimArtist2.jpg";
 import PageTitle from "../../components/Title";
 import "./artists.css";
 
@@ -19,12 +21,12 @@ function Artists() {
                 About the photographers
            </p>
               <p>
-                About the price
+                Welcome to a unique opportunity to get a great job done and support your neighbors in their passion
            </p>
               <p>
-                More about them
+                Contact the photographers below about prints, classees and portraits in your area
            </p>
-              <p>Join us as we spread light and creativity through the ingenuity of original ideas.</p>
+              <p>Join us as we spread light through creativity .</p>
             </Col>
           </Row>
         </div>
@@ -38,7 +40,7 @@ function Artists() {
             <div className="col-12 col-sm-6 col-md-4 col-lg-3">
               <div className="our-team">
                 <div className="picture">
-                  <img className="img-fluid" alt="photo1" src="" />
+                  <img  alt="katiejane" src={katieprofile} />
                 </div>
                 <div className="team-content">
                   <h3 className="name">KatieJane</h3>
@@ -56,7 +58,7 @@ function Artists() {
             <div className="col-12 col-sm-6 col-md-4 col-lg-3">
               <div className="our-team">
                 <div className="picture">
-                  <img className="img-fluid" alt="James" src="" />
+                  <img alt="James" src={JamesProfile} />
                 </div>
                 <div className="team-content">
                   <h3 className="name">James </h3>
@@ -72,7 +74,7 @@ function Artists() {
             <div className="col-12 col-sm-6 col-md-4 col-lg-3">
               <div className="our-team">
                 <div className="picture">
-                  <img className="img-fluid" alt="Kim" src=""/>
+                  <img  alt="Kim" src={kimArtist2}/>
                 </div>
                 <div className="team-content">
                   <h3 className="name">Kim</h3>
