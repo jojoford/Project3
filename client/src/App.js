@@ -10,7 +10,7 @@ import Login from './pages/Login';
 // import Signup from './pages/Signup';
 import About from './components/About';
 // import Carousel from './components/Carousel';
-import Contact from './pages/contact';
+import Contact from './pages/Contact/contact';
 import Artists from './pages/artists';
 
 
