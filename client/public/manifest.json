@@ -1,7 +1,6 @@
 {
   "name": "Photo Album",
   "short_name": "Album",  
-  "prefer_related_applications": false,
   
   
   "icons": [
@@ -36,7 +35,7 @@
   
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "start_url": "/",
+  "start_url": "http://localhost:3000/index.html",
   "display": "standalone"
 
 }
