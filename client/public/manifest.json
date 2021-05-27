@@ -1,10 +1,8 @@
 {
   "name": "Photo Album",
   "short_name": "Album",  
-  "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff",
+  "prefer_related_applications": false,
+  
   
   "icons": [
     {
@@ -30,9 +28,15 @@
     {
       "src": "./icon-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
     }
    
-  ]
+  ],
+  
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "start_url": "/",
+  "display": "standalone"
 
 }
