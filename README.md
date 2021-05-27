@@ -5,11 +5,15 @@
 
 
 ## Description
-
+<p>An app easily accessible to purchase photographs and hire local photographers</p>
 
 ## Usage💻
 
 
 ## Contributors ✏️
 
-Alyse Alford<br>Aaliyah Symlar
+Alyse Alford
+<br>
+<a href="https://github.com/symlara" target="_blank">Aaliyah Symlar</a>
+<br>
+Ivy Stephenson
