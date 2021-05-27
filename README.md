@@ -17,3 +17,5 @@ Alyse Alford
 <a href="https://github.com/symlara" target="_blank">Aaliyah Symlar</a>
 <br>
 Ivy Stephenson
+<br>
+Justin Welch
