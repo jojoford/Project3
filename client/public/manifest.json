@@ -1,8 +1,6 @@
 {
   "name": "Photo Album",
   "short_name": "Album",  
-  
-  
   "icons": [
     {
       "src": "./icon-72x72.png",
@@ -25,6 +23,11 @@
       "type": "image/png"
     },
     {
+      "src": "./icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
       "src": "./icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
@@ -35,7 +38,7 @@
   
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "start_url": "http://localhost:3000/index.html",
+  "start_url": "./index.html",
   "display": "standalone"
 
 }

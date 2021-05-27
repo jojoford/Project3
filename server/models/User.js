@@ -7,17 +7,17 @@ const Order = require('./Order');
 const userSchema = new Schema({
     firstName: {
         type: String,
-        required: true,
+        required: 'Please enter you first name',
         trim: true
       },
       lastName: {
         type: String,
-        required: true,
+        required: 'Please enter your last name',
         trim: true
       },
       email: {
         type: String,
-        required: true,
+        required: 'Please enter your email',
         unique: true
       },
       password: {

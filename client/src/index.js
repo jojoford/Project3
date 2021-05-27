@@ -13,4 +13,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 // // help app work offline and load faster
-serviceWorker.register();
+ serviceWorker.register();
