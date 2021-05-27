@@ -6,6 +6,7 @@ import  ApolloClient  from 'apollo-boost';
 
 import Home from "./pages/Home";
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 import Login from './pages/Login';
 // import Signup from './pages/Signup';
 import About from './components/About';
@@ -62,10 +63,9 @@ function App() {
       <Route path="/artists" component={Artists} />
       <Route path="/contact" component={Contact} />
     </Switch>
-    
-      {/* <Carousel> </Carousel> */}
-      {/* <About></About> */}
+
   </div>
+  <Footer></Footer>
  </Router>
  </ApolloProvider>
 );
