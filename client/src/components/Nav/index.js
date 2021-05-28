@@ -38,7 +38,7 @@ function Nav() {
         <Link className="nav-item" to="/contact">Contact</Link>
                 
           
-        <Link className="nav-item" to="/portraits">Portraits</Link>
+        <Link className="nav-item" onClick={closeMobileMenu} to="/gallery">Gallery</Link>
                    
   
        <Link className="nav-item" to="/blackandwhites">Black and Whites</Link>

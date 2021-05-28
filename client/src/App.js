@@ -13,7 +13,7 @@ import About from './components/About';
 // import Carousel from './components/Carousel';
 import Contact from './pages/contact/contact';
 import Artists from './pages/artists';
-
+import Gallery from './pages/gallery';
 
 
 const client = new ApolloClient({
@@ -62,6 +62,7 @@ function App() {
       <Route exact path="/about" component={About} />
       <Route path="/artists" component={Artists} />
       <Route path="/contact" component={Contact} />
+      <Route path="/gallery" component={Gallery}/>
     </Switch>
 
   </div>

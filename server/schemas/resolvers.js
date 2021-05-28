@@ -19,28 +19,24 @@ const resolvers = {
       
             return await Product.find(params).populate('category');
           },
-
+          // get products
           product: async (parent, { _id }) => {
             return await Product.findById(_id).populate('category');
           },
 
-        user: async (parent, args, context) => {
-            if (context.user) {
-                const user = await User.findById(context.user._id).populate({
-                    path: 'orders.products',
-                    populate: 'category'
-                });
+       user: async () => {
+         return User.find()
+         .select('-__v -password')
+         .populate('products')
+       },
 
-                user.orders.sort((a, b) => b.purchaseDate - a.purchaseDate);
-
-                return user;
-            }
-
-            throw new AuthenticationError('Not logged in!');
-        },
+       user: async (parent, {name}) => {
+         return User.findOne({name})
+         .populate('products')
+       },
 
         // order(photo) query here?
-        order: async (parent, { _id }, context) => {
+        order: async () => {
             if (context.user) {
                 const user = await User.findById(context.user._id).populate({
                     path: 'orders.products',
@@ -48,9 +44,7 @@ const resolvers = {
                   });
 
                   return user.orders.id(_id);
-            }
-
-            throw new AuthenticationError('Not logged in!');  
+            } 
         },
         // checkout query here?
         checkout: async (parent, args, context) => {
@@ -98,7 +92,7 @@ const resolvers = {
             return { token, user };
         },
         //  (order) mutation here?
-        addOrder: async (parent, { products }, context) => {
+        addOrder: async (parent, { products }) => {
             console.log(context);
             if (context.user) {
                 const order = new Order({ products });
@@ -108,15 +102,12 @@ const resolvers = {
                 return order;
               }
 
-              throw new AuthenticationError('Not logged in');
         },
 
         updateUser: async (parent, args, context) => {
             if (context.user) {
                 return await User.findByIdAndUpdate(context.user._id, args, { new: true  });
             }
-
-            throw new AuthenticationError('Not logged in');
         },
         // updatePhoto here?
         updatePhoto: async (parent, { _id, quantity }) => {
@@ -124,7 +115,7 @@ const resolvers = {
       
             return await Photo.findByIdAndUpdate(_id, { $inc: { quantity: decrement } }, { new: true });
           },
-       
+       // get user by email
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });
 
