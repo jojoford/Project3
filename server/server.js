@@ -1,6 +1,12 @@
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
+//for contact page
+const router = express.Router();
+const cors = require("cors");
+const nodemailer = require("nodemailer");
+
+
 
 const { typeDefs, resolvers } = require('./schemas');
 const { authMiddleware } = require('./utils/auth');
@@ -15,6 +21,11 @@ const server = new ApolloServer({
 });
 
 server.applyMiddleware({ app });
+//for contact email
+app.use(cors());
+app.use(express.json());
+app.use("/", router);
+app.listen(5000, () => console.log("Server Running"));
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());

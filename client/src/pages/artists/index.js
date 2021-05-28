@@ -82,26 +82,12 @@ function Artists() {
                 </div>
                 <ul className="social">
                   <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="https://www.linkedin.com/" target="_blank"> </a> </li>
-                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="mailto:alex.engelmann@gmail.com" target="_blank"> </a></li>
+                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="mailto:Kim@gmail.com" target="_blank"> </a></li>
                 </ul>
               </div>
             </div>
 
-            <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-              <div className="our-team">
-                <div className="picture">
-                  <img className="img-fluid" alt="fourth" src="" />
-                </div>
-                <div className="team-content">
-                  <h3 className="name">Name 4</h3>
-                  <h4 className="title">Photographer</h4>
-                </div>
-                <ul className="social">
-                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="https://www.linkedin.com/" target="_blank" > </a></li>
-                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="mailto: @gmail.com" target="_blank"> </a></li>
-                </ul>
-              </div>
-            </div>
+           
           </div>
         </div>
 

@@ -1,4 +1,4 @@
- import React from 'react';
+import React, { useState } from "react";
 // import { validateEmail } from '../../utils/helpers';
 
 
@@ -9,18 +9,34 @@ import PageTitle from '../../components/Title';
 
 
 function Contact() {
+  const [status, setStatus] = useState("Submit");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+    const { name, email, message } = e.target.elements;
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+    let response = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
+    setStatus("Submit");
+    let result = await response.json();
+    alert(result.status);
+  };
     return (
-      <div className="contact-wrapper">
+      
+      <form className="contact-wrapper">
         <PageTitle title="Contact"></PageTitle>
         <div className="contact-container">
           <div className="smaller-container">
-            <form url="https://docs.google.com/forms/d/e/1FAIpQLSd2CJ2zsYwSF6ndw23-v6rt_ZNfU3GneBPI1J-lA8RgZgscNw/viewform?embedded=true"
-              width="1500px"
-              height="753px"
-              id="forms"
-              className="myClassname"
-              display="initial"
-              position="relative" ><label>
+            <label>
               Your Name:
               <input type="text" name="name" />
             </label>
@@ -32,17 +48,13 @@ function Contact() {
               Message:
               <input type="text" name="message" />
             </label>
-            <label>
-              number/email:
-              <input type="text" name="number" />
-            </label>
-            <input type="submit" value="Submit" />
-              </form>
-          </div>
-        </div>
+            <label htmlFor="email">Email:</label>
+        <input type="email" id="email" required />
       </div>
-
-      
+            
+            <button type="submit">{status}</button>
+            </div>
+            </form>
     );
 }
 
