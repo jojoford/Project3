@@ -14,10 +14,9 @@
 
 
 ## Contributors ✏️
-<a href="https://github.com/jojoford" target="_blank">
-Alyse Alford </a>
+<a href="https://github.com/jojoford" target="_blank" >Alyse Alford </a>
 <br>
-<a href="https://github.com/symlara" target="_blank">Aaliyah Symlar</a>
+<a href="https://github.com/symlara" target="_blank" >Aaliyah Symlar</a>
 <br>
 Ivy Stephenson
 <br>

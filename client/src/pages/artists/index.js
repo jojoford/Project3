@@ -24,7 +24,7 @@ function Artists() {
                 Welcome to a unique opportunity to get a great job done and support your neighbors in their passion
            </p>
               <p>
-                Contact the photographers below about prints, classees and portraits in your area
+                Contact the photographers below about prints, classes and portraits in your area
            </p>
               <p>Join us as we spread light through creativity .</p>
             </Col>
@@ -87,7 +87,7 @@ function Artists() {
               </div>
             </div>
 
-            <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+            {/* <div className="col-12 col-sm-6 col-md-4 col-lg-3">
               <div className="our-team">
                 <div className="picture">
                   <img className="img-fluid" alt="fourth" src="" />
@@ -101,7 +101,7 @@ function Artists() {
                   <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="mailto: @gmail.com" target="_blank"> </a></li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
