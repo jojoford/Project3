@@ -6,8 +6,8 @@ import Nashvilleweddingjames from '../../assets/all/Nashvilleweddingjames.jpg';
 
 function Gallery(){
     return(
- <div class="row">
-  <div class="column">
+ <div className="row">
+  <div className="column">
     <img src={kimsbaby}></img>
     <img src={KimsBlackandWhite}></img>
     <img src={Nashvilleweddingjames}></img>
