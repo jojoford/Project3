@@ -3,6 +3,7 @@ import "./contact.css";
 import PageTitle from '../../components/Title';
 import React, { useState } from 'react';
 import{ send } from 'emailjs-com';
+import moment from 'moment';
 
 
 // import { useMutation } from '@apollo/react-hooks';
@@ -18,7 +19,8 @@ function Contact() {
     photographer: '',
     message: '',
     email: '',
-    time: ''
+    time: '',
+    startDate: ''
   });
 
   const onSubmit = (e) => {
@@ -44,29 +46,8 @@ function Contact() {
   };
 
 
-//   const [status, setStatus] = useState("Submit");
-//   const [formState, setFormState] = useState({ name: '', email: '', photographer: '', message: '' });
-  
-// const handleChange = (event) => {
-//   const { name, value } = event.target;
-
-//   setFormState({
-//     ...formState,
-//     [name]: value,
-//   });
-
-
-// };
-
-//submit form
-// const handleFormSubmit = async event => {
-//   event.preventDefault();
-
-// }
-
-
   return (
-      
+    
     <form className="contact-wrapper" onSubmit={onSubmit}>
       <PageTitle title="Contact"></PageTitle>
       <div className="contact-container">
@@ -87,6 +68,8 @@ function Contact() {
             Email:
       <input type="email"  name="email" id="email"  value={toSend.email} onChange={handleChange} />
       </label>
+      <label>Select Date:</label>
+      <input type="text" name="startDate" id="date" value={toSend.startDate} onChange={handleChange} placeholder="MM/dd/yyyy" />
       <label>
         Time:
         <input type="text" name="time" id="time" value={toSend.time} onChange={handleChange} />
@@ -96,7 +79,9 @@ function Contact() {
           <button type="submit">Submit</button>
           </div>
           </form>
+          
   );
+  
 }
 
 
