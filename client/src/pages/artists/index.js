@@ -8,6 +8,7 @@ import kimArtist2 from "../../assets/kimArtist2.jpg";
 import PageTitle from "../../components/Title";
 import "./artists.css";
 
+
 function Artists() {
   return (
     <div className="about-wrapper">

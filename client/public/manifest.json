@@ -38,7 +38,8 @@
   
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "start_url": "./index.html",
-  "display": "standalone"
+  "start_url": "/",
+  "display": "standalone",
+  "scope": "/"
 
 }
