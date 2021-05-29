@@ -3,7 +3,7 @@ import "./contact.css";
 import PageTitle from '../../components/Title';
 import React, { useState } from 'react';
 import{ send } from 'emailjs-com';
-// send("user_sEQrpGOlpMgWkdKpkI89Y");
+
 
 // import { useMutation } from '@apollo/react-hooks';
 
