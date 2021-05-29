@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 // import SignupForm from './SignupForm';
 // import LoginForm from './LoginForm';
 // import Auth from '../../utils/auth';
-
+import './nav.css';
 //alyse added link 
 function Nav() {
     
