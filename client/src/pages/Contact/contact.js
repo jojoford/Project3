@@ -17,7 +17,8 @@ function Contact() {
     name: '',
     photographer: '',
     message: '',
-    email: ''
+    email: '',
+    time: ''
   });
 
   const onSubmit = (e) => {
@@ -85,6 +86,10 @@ function Contact() {
           <label>
             Email:
       <input type="email"  name="email" id="email"  value={toSend.email} onChange={handleChange} />
+      </label>
+      <label>
+        Time:
+        <input type="text" name="time" id="time" value={toSend.time} onChange={handleChange} />
       </label>
     </div>
           
