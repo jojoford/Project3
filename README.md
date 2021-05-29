@@ -2,11 +2,11 @@
 <a href="#"><img src="https://img.shields.io/badge/javascript-80%25-blue"></a> <a href="#"><img src="https://img.shields.io/badge/dependencies-up%20to%20date-green"></a>
 
 ## Table of Contents 📖
-[Description](#description)
-[User story](#user-story)
-[Usage](#usage)
-[Technologies Used](#technologies-used)
-[Contributors](#contributors)
+* [Description](#description)
+* [User story](#user-story)
+* [Usage](#usage)
+* [Technologies Used](#technologies-used)
+* [Contributors](#contributors)
 
 ## Description💬 
 <p>A great resource for local freelance photographers and clients. This app is easily accessible to purchase photographs and hire local photographers</p>
