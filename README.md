@@ -34,7 +34,7 @@ Includes authentication (JWT).
 </p>
 
 ## Screenshot
-
+[![photoalbum1.png](https://i.postimg.cc/vZ1yBd0T/photoalbum1.png)](https://postimg.cc/zy16t4ZY)
 ## Link
 Deployed on Heroku: 
 
