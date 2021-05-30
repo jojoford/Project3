@@ -17,3 +17,20 @@
 
   /* media queries */
 
+@media only screen and (max-width: 320px) {
+  .row img{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .row img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .row img {
+    width: 100%;
+  }
+}
