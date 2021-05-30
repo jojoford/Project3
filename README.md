@@ -8,7 +8,7 @@
 * [Technologies Used](#technologies-used)
 * [Screenshot](#screenshot)
 * [Link](#Link)
-* [Contributors](#contributors)
+* [Contributing](#contributing)
 
 ## Description💬 
 <p>A great resource for local freelance photographers and clients. This 1 app will help photographers generate revenue in 3 ways: Selling prints, Booking clients for sessions and students for lessons. This app is easily accessible by mobile device for the client to purchase photographs and hire local photographers</p>
@@ -38,7 +38,7 @@ Includes authentication (JWT).
 ## Link
 Deployed on Heroku: 
 
-## Contributors ✏️
+## Contributing ✏️
 <a href="https://github.com/jojoford" target="_blank" >Alyse Alford </a>
 <br>
 <a href="https://github.com/symlara" target="_blank" >Aaliyah Symlar</a>
