@@ -28,6 +28,8 @@ function Contact() {
     )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
+        alert('Success! You will recieve an email shortly with your day and time!')
+        window.location.reload(false);
       })
       .catch((err) => {
         console.log('FAILED...', err);
