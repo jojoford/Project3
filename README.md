@@ -24,7 +24,7 @@
 <p>Uses GraphQL with a Node.js and Express.js server.</p>
 <p> Uses MongoDB and the Mongoose ODM for the database and queries and mutations for retrieving, adding, updating, and deleting data.</p>
 <br>
-<p> PWA Technologies:,/p>
+<p> PWA Technologies:</p>
 <p>
 Uses a web manifest, a service worker for offline functionality.
 It is installable, responsive and interactive. 
