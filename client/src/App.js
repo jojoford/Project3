@@ -32,7 +32,7 @@ const client = new ApolloClient({
   },
   uri: '/graphql',
 })
-//alyse added artists and contact
+
 
 
 function App() {
