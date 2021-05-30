@@ -6,7 +6,7 @@
 * [User story](#user-story)
 * [Usage](#usage)
 * [Technologies Used](#technologies-used)
-* [Screenshot](#Screenshot)
+* [Screenshot](#screenshot)
 * [Link](#Link)
 * [Contributors](#contributors)
 
@@ -31,6 +31,7 @@ It is installable, responsive and interactive.
 Includes authentication (JWT).
 </p>
 ## Screenshot
+
 ## Link
 Deployed on Heroku: 
 
