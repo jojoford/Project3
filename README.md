@@ -30,6 +30,7 @@ Uses a web manifest, a service worker for offline functionality.
 It is installable, responsive and interactive. 
 Includes authentication (JWT).
 </p>
+
 ## Screenshot
 
 ## Link
