@@ -4,15 +4,21 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ApolloProvider } from '@apollo/react-hooks';
 import  ApolloClient  from 'apollo-boost';
 
+
+
 import Home from "./pages/Home";
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 import Login from './pages/Login';
 // import Signup from './pages/Signup';
 import About from './components/About';
 // import Carousel from './components/Carousel';
-import Contact from './pages/contact';
+import Contact from './pages/Contact/contact';
 import Artists from './pages/artists';
+import Gallery from './pages/gallery';
 
+import{ send } from 'emailjs-com';
+send("user_sEQrpGOlpMgWkdKpkI89Y");
 
 
 const client = new ApolloClient({
@@ -26,7 +32,7 @@ const client = new ApolloClient({
   },
   uri: '/graphql',
 })
-//alyse added artists and contact
+
 
 
 function App() {
@@ -61,11 +67,11 @@ function App() {
       <Route exact path="/about" component={About} />
       <Route path="/artists" component={Artists} />
       <Route path="/contact" component={Contact} />
+      <Route path="/gallery" component={Gallery}/>
     </Switch>
-    
-      {/* <Carousel> </Carousel> */}
-      {/* <About></About> */}
+
   </div>
+  <Footer></Footer>
  </Router>
  </ApolloProvider>
 );

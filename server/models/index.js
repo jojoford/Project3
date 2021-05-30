@@ -1,10 +1,10 @@
 const User = require('./User');
 // for the cart?
- const Photo = require('./Photo');
-const Photographer = require('./Photographer');
+ const Product = require('./Product');
+// const Photographer = require('./Photographer');
 const Order = require('./Order');
+const Category = require('./Category');
 
 
 
-
-module.exports = { Photographer, User, Order, Photo}; 
+module.exports = { Category, User, Order, Product}; 
