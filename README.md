@@ -17,6 +17,8 @@
 <P> I want to see images from local photographers that are avaliable to purpchase. When I log I can click on a photo on the gallery pages and add them to my shopping cart.</p>
 
 ## Usage💻
+To run on _localhost:3001_, please run command _npm start_ to start the server and _control C_ to stop.
+
 
 
 ## Technologies Used
