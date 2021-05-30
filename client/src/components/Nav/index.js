@@ -1,14 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 // import SignupForm from './SignupForm';
 // import LoginForm from './LoginForm';
 // import Auth from '../../utils/auth';
-
+import './nav.css';
 //alyse added link 
 function Nav() {
-    const [click, setClick] = useState(false);
-    // const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
+    
 
 //   const  categories = [
 //     { name: 'blackAndWhite', description: 'Photos in black and white' },
@@ -24,29 +22,29 @@ function Nav() {
   // } = props;
 
       return (
-          <div className={click ? "nav-options active" : "items"}>
+          <div>
         <nav className="nav">
-        <h1 className="header" onClick={closeMobileMenu}>
+        <h1 className="header">
           <Link to="/">Photo-Album📸</Link>
          </h1>
         
         <div className="nav-items">
-        <Link className="nav-item" onClick={closeMobileMenu} to="/about">About</Link>
+        <Link className="nav-item" to="/about">About</Link>
                  
         
-        <Link className="nav-item" onClick={closeMobileMenu} to="/artists">Artists</Link>
+        <Link className="nav-item" to="/artists">Artists</Link>
                  
         
-        <Link className="nav-item" onClick={closeMobileMenu} to="/contact">Contact</Link>
+        <Link className="nav-item" to="/contact">Contact</Link>
                 
           
-        <Link className="nav-item" onClick={closeMobileMenu} to="/gallery">Gallery</Link>
+        <Link className="nav-item"  to="/gallery">Gallery</Link>
                    
   
-       <Link className="nav-item" onClick={closeMobileMenu} to="/blackandwhites">Black and Whites</Link>
+       <Link className="nav-item" to="/blackandwhites">Black and Whites</Link>
                  
         
-        <Link className="nav-item" onClick={closeMobileMenu} to="/landscapes">Landscapes</Link>  
+        <Link className="nav-item" to="/landscapes">Landscapes</Link>  
 
           </div>  
    </nav>

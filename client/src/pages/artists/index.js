@@ -8,6 +8,7 @@ import kimArtist2 from "../../assets/kimArtist2.jpg";
 import PageTitle from "../../components/Title";
 import "./artists.css";
 
+
 function Artists() {
   return (
     <div className="about-wrapper">
@@ -24,7 +25,7 @@ function Artists() {
                 Welcome to a unique opportunity to get a great job done and support your neighbors in their passion
            </p>
               <p>
-                Contact the photographers below about prints, classees and portraits in your area
+                Contact the photographers below about prints, classes and portraits in your area
            </p>
               <p>Join us as we spread light through creativity .</p>
             </Col>

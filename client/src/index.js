@@ -11,6 +11,7 @@ ReactDOM.render(
     <App />
   </React.StrictMode>,
   document.getElementById('root')
+  
 );
 // // help app work offline and load faster
  serviceWorker.register();
