@@ -3,6 +3,8 @@ import PageTitle from "../Title";
 import "./about.css";
 import Row from "../Row";
 import Col from "../Col";
+import profilepic from '../../assets/profilepic.jpg';
+import aaliyah from '../../assets/aaliyah.jpg';
 
 // about component
 function About() {
@@ -24,7 +26,42 @@ function About() {
             </Col>
           </Row>
         </div>
-</div> </div>
+</div> 
+<div className="col-12 col-sm-6 col-md-4 col-lg-3">
+  <h1> Our Team</h1>
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div className="our-team">
+                <div className="picture">
+                  <img  alt="Aaliyah" src={aaliyah}/>
+                </div>
+                <div className="team-content">
+                  <h3 className="name">Aaliyah Symlar</h3>
+                  <h4 className="title">Symlara</h4>
+                </div>
+                <ul className="social">
+                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="https://www.linkedin.com/in/aaliyah-symlar-931213102/" target="_blank"> </a> </li>
+                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="https://github.com/symlara" target="_blank"> </a></li>
+                </ul>
+              </div>
+            </div>
+            <div className="our-team">
+                <div className="picture">
+                  <img alt="Jojoford" src={profilepic} />
+                </div>
+                <div className="team-content">
+                  
+                  <h3 className="name">Alyse Alford </h3>
+                  <h4 className="title"> JojoFord</h4>
+                </div>
+                <ul className="social">
+                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="https://www.linkedin.com/in/alyse-alford-5120761b4/" target="_blank"> </a></li>
+                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="https://github.com/jojoford" target="_blank"> </a></li>
+                </ul>
+              </div>
+            </div>
+
+            
+</div>
         
            
             );

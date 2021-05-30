@@ -38,13 +38,10 @@ function Nav() {
         <Link className="nav-item" to="/contact">Contact</Link>
                 
           
-        <Link className="nav-item"  to="/gallery">Gallery</Link>
+        <Link className="nav-item"  to="/gallery">Shop Gallery</Link>
                    
   
-       <Link className="nav-item" to="/blackandwhites">Black and Whites</Link>
-                 
-        
-        <Link className="nav-item" to="/landscapes">Landscapes</Link>  
+      
 
           </div>  
    </nav>
