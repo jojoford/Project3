@@ -45,10 +45,10 @@ function Artists() {
                 </div>
                 <div className="team-content">
                   <h3 className="name">KatieJane</h3>
-                  <h4 className="title">photographer years</h4>
+                  <h4 className="title">photographer 10+ years</h4>
                 </div>
                 <ul className="social">
-                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="https://www.linkedin.com/" target="_blank"> </a></li>
+                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="https://www.linkedin.com/company/katie-jane-photography/about/" target="_blank"> </a></li>
                   <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="mailto: her@gmail" target="_blank" > </a></li>
                 </ul>
               </div>
@@ -63,10 +63,10 @@ function Artists() {
                 </div>
                 <div className="team-content">
                   <h3 className="name">James </h3>
-                  <h4 className="title"> Blank years</h4>
+                  <h4 className="title"> Photographer 10+ years</h4>
                 </div>
                 <ul className="social">
-                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="https://www.linkedin.com/" target="_blank"> </a></li>
+                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="https://www.linkedin.com/in/james-strength-96595259/" target="_blank"> </a></li>
                   <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="mailto:him@gmail.com" target="_blank"> </a></li>
                 </ul>
               </div>
@@ -82,7 +82,7 @@ function Artists() {
                   <h4 className="title">Artist for years</h4>
                 </div>
                 <ul className="social">
-                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="https://www.linkedin.com/" target="_blank"> </a> </li>
+                  <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="https://www.linkedin.com/in/kimberley-jay-b4a21517/" target="_blank"> </a> </li>
                   <li><a className="social-link fab fa-github" rel="noopener noreferrer" href="mailto:Kim@gmail.com" target="_blank"> </a></li>
                 </ul>
               </div>
