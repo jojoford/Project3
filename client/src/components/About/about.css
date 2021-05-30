@@ -125,3 +125,19 @@
   .social-link{
     display:none;
   }
+
+  /* media queries */
+
+ 
+
+  @media only screen and (max-width: 480px) {
+    .team {
+      text-align: center;
+    }
+  } 
+
+  @media only screen and (max-width: 768px) {
+    .team {
+      text-align: center;
+    }
+  }

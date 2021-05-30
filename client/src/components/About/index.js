@@ -28,7 +28,7 @@ function About() {
         </div>
 </div> 
 <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-  <h1> Our Team</h1>
+  <h1 className="team"> Our Team</h1>
               <div className="col-12 col-sm-6 col-md-4 col-lg-3">
               <div className="our-team">
                 <div className="picture">

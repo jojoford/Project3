@@ -3,14 +3,8 @@ import "./contact.css";
 import PageTitle from '../../components/Title';
 import React, { useState } from 'react';
 import{ send } from 'emailjs-com';
-
-
-
 // import { useMutation } from '@apollo/react-hooks';
-
-
-
-// import { validateEmail } from "../../utils/helpers";
+import { validateEmail } from "../../utils/helpers";
 
 
 function Contact() {
@@ -22,6 +16,8 @@ function Contact() {
     time: '',
     startDate: ''
   });
+
+  const [errorMessage, setErrorMessage] = useState('');
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -42,13 +38,21 @@ function Contact() {
 
 
   const handleChange = (e) => {
+    if (e.target.name === 'email') {
+      const isValid = validateEmail(e.target.value);
+      if (!isValid) {
+        setErrorMessage('Your email is invalid');
+      }else {
+
+      }
+    }
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
 
 
   return (
     
-    <form className="contact-wrapper" onSubmit={onSubmit}>
+    <form className="contact-wrapper" onSubmit={onSubmit} id="forms">
       <PageTitle title="Contact"></PageTitle>
       <div className="contact-container">
         <div className="smaller-container">
@@ -76,7 +80,7 @@ function Contact() {
       </label>
     </div>
           
-          <button type="submit">Submit</button>
+          <button type="submit" id="button">Submit</button>
           </div>
           </form>
           
