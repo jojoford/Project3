@@ -36,7 +36,8 @@ Includes authentication (JWT).
 ## Screenshot
 [![photoalbum1.png](https://i.postimg.cc/vZ1yBd0T/photoalbum1.png)](https://postimg.cc/zy16t4ZY)
 ## Link
-Deployed on Heroku: 
+<a href="https://drive.google.com/file/d/1d8WVRudGNRzxSrOAxdSAzpHTbhePzmF2/view" target="_blank" > Walkthrough Video </a>
+[Work on Shopping page](https://drive.google.com/file/d/1pDSMiObqh13IcJjrc5Y6VSzpiJV2dDIv/view)
 
 ## Contributing ✏️
 <a href="https://github.com/jojoford" target="_blank" >Alyse Alford </a>
