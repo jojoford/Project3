@@ -3,10 +3,10 @@
 import './index.css';
 import Item1 from '../../assets/all/KimsBlackandWhite.jpg'
     import Item2 from '../../assets/all/kimslandscape.jpg'
-    import Item3 from '../../assets/all/NVskyline.jpg'
-    import Item4 from '../../assets/all/Nashvilleweddingjames.jpg'
-    import Item5 from '../../assets/blackAndWhite/0-minmin.jpg'
-    import Item6 from '../../assets/Portraits/katiep4-minmin.jpg'
+    // import Item3 from '../../assets/all/NVskyline.jpg'
+    // import Item4 from '../../assets/all/Nashvilleweddingjames.jpg'
+    // import Item5 from '../../assets/blackAndWhite/0-minmin.jpg'
+    // import Item6 from '../../assets/Portraits/katiep4-minmin.jpg'
     import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY,ADD_SHIPPING } from './actions/action-types/cart-actions'
     import { addToCart } from './actions/cartActions'
      import React, { Component, useState, useEffect } from "react";
