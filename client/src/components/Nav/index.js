@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 // import SignupForm from './SignupForm';
 // import LoginForm from './LoginForm';
 // import Auth from '../../utils/auth';
+import Cart from '../Cart';
 import './nav.css';
 
 function Nav() {
@@ -14,7 +15,7 @@ function Nav() {
         <h1 className="header">
           <Link to="/">Photo-Album📸</Link>
          </h1>
-        
+        <Cart />
         <div className="nav-items">
         <Link className="nav-item" to="/about">About</Link>
                  

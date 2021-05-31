@@ -3,7 +3,7 @@ import './index.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ApolloProvider } from '@apollo/react-hooks';
 import  ApolloClient  from 'apollo-boost';
-
+import { StoreProvider } from './utils/GlobalState';
 
 
 import Home from "./pages/Home";
@@ -59,6 +59,7 @@ function App() {
   <ApolloProvider client={client}>
 <Router>
   <div>
+    <StoreProvider>
     <Nav /> 
     <Switch>
       <Route exact path="/" component={Home} />
@@ -69,7 +70,7 @@ function App() {
       <Route path="/contact" component={Contact} />
       <Route path="/gallery" component={Gallery}/>
     </Switch>
-
+</StoreProvider>
   </div>
   <Footer></Footer>
  </Router>

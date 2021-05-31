@@ -87,6 +87,6 @@ import {
  }
 };
 
-export function usePrductReducer(initialState) {
+export function useProductReducer(initialState) {
     return useReducer(reducer, initialState);
 }
