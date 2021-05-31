@@ -35,7 +35,7 @@ Includes authentication (JWT).
 
 ## Screenshot
 [![photoalbum1.png](https://i.postimg.cc/vZ1yBd0T/photoalbum1.png)](https://postimg.cc/zy16t4ZY)
-## Link
+## Links
 <a href="https://drive.google.com/file/d/1d8WVRudGNRzxSrOAxdSAzpHTbhePzmF2/view" target="_blank" > Video: Walkthrough  </a>
 <br>
 [Video: Shopping page in progress](https://drive.google.com/file/d/1pDSMiObqh13IcJjrc5Y6VSzpiJV2dDIv/view)
