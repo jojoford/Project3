@@ -15,31 +15,31 @@ function Gallery(){
     return(
  <div className="row">
     <h2> Kim's Gallery</h2>
-    <div class="coloumn">
+    <div className="coloumn">
     
-    <img src={kimsbaby}></img>
-    <img src={KimsBlackandWhite}></img>
-    <img src={kimslandscape}></img> 
+    <img src={kimsbaby} alt="baby"></img>
+    <img src={KimsBlackandWhite} alt="couple"></img>
+    <img src={kimslandscape} alt="couple and the sky"></img> 
     
     </div>
      
-       <div class="row">
+       <div className="row">
     <h1>Shop James  </h1>
-    <div class="coloumn">
+    <div className="coloumn">
     
-    <img src={Nashvilleweddingjames}></img>
-    <img src={NVskyline}></img>
-    <img src={tnlandscape}></img>
+    <img src={Nashvilleweddingjames} alt="wedding"></img>
+    <img src={NVskyline} alt="nashville skyline"></img>
+    <img src={tnlandscape} alt="greenery"></img>
     </div></div>
 
-     <div class="row">
+     <div className="row">
      <h1> Katie's Gallery </h1>
-     <div class="coloumn">
+     <div className="coloumn">
     
-     <img src={katiepzero}></img>
-     <img src={katiepfour}></img>
-     <img src={katiepfive}></img>
-      <img src={katiezero}></img></div>
+     <img src={katiepzero} alt="family and a dog"></img>
+     <img src={katiepfour} alt="baby"></img>
+     <img src={katiepfive} alt="kids at a wedding"></img>
+      <img src={katiezero} alt="couple laughing"></img></div>
   </div>
   </div>
     
