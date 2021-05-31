@@ -6,7 +6,7 @@ import Carousel from '../components/Carousel';
 const Home = () => {
     return (
         <div className="carousel">
-            {/* <Cart /> */}
+             {/* <Cart />  */}
             {/* <Nav></Nav>  */}
             <Carousel></Carousel>
     
