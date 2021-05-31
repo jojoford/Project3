@@ -40,6 +40,7 @@ Includes authentication (JWT).
 <br>
 [Video: Shopping page in progress](https://drive.google.com/file/d/1pDSMiObqh13IcJjrc5Y6VSzpiJV2dDIv/view)
 
+[Slideshow preentation](https://docs.google.com/presentation/d/19EfKZjI8v-D5w4YoDMruy6yubGjeTPlEIrfCMCdYqUI/edit#slide=id.p)
 ## Contributing ✏️
 <a href="https://github.com/jojoford" target="_blank" >Alyse Alford </a>
 <br>
@@ -48,3 +49,5 @@ Includes authentication (JWT).
 Ivy Stephenson
 <br>
 Justin Welch
+
+
